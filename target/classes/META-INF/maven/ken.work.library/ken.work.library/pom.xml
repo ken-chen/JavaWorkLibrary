@@ -5,4 +5,40 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>ken.work.library</name>
   <description>ken.work.library</description>
+  
+  
+  
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<custom.dependency.spring.version>3.0.3.RELEASE</custom.dependency.spring.version>
+	</properties>
+
+	<dependencies>
+		<!-- DO NOT EDIT WITHOUT SETTING SCOPE, and version. If adding a jar, compare 
+			to a clean Oracle Sites install, to check if the jar is provided. If so, 
+			ensure the version of the jar we compile against matches that in the default 
+			oracle sites install. This is to ensure we can upgrade without hours of effort 
+			wasted fixing versions of duplicate jars. Regards James Rickards -->
+		<dependency>
+			<!-- upgraded from default spring 2.5.5 that came with 11gR1 -->
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${custom.dependency.spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.4</version>
+		</dependency>
+
+		
+	</dependencies>
+	
+	
+	<!--  -->
+	<dependencyManagement>
+		<dependencies>
+		</dependencies>		
+	</dependencyManagement>
 </project>

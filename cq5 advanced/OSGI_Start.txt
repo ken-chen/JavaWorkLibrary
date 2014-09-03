@@ -1,0 +1,145 @@
+Open the ticket
+
+Target
+C:\Windows\System32\cmd.exe /K "C:\Program Files (Portable)\CustomCMD\javaVersion.cmd"
+
+Start in
+D:\Projects\HoldenSlingPOC
+
+
+java -jar org.apache.sling.launchpad-6-standalone.jar
+
+
+Click below in the URL
+http://localhost:8080/system/console/bundles
+
+
+Create some content
+curl -u admin:admin -F"sling:resourceType=foo/bar" -F"title=some title" http://localhost:8080/content/mynode
+
+
+The resulting node can be seen at 
+
+http://localhost:8080/content/mynode.html
+http://localhost:8080/content/mynode.json
+http://localhost:8080/content/mynode.xml
+
+
+http://localhost:8080/content/mynode2.asdf
+
+http://localhost:8080/content/test.html
+
+
+http://localhost:8080/content/mynode.asdf
+
+
+Admin
+http://localhost:8080/.explorer.html#
+http://localhost:8080/system/console/bundles
+
+
+
+
+Read
+http://sling.apache.org/documentation/tutorials-how-tos.html
+http://sling.apache.org/site/repository-based-development.html
+
+
+
+curl http://localhost:8080/content/mynode.json {"title":"some title","sling:resourceType":"foo/bar","jcr:primaryType":"nt:unstructured"}
+
+
+
+
+mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.isobar.app -DartifactId=jcrPOC
+
+
+http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html
+
+
+http://stackoverflow.com/questions/16932789/accessing-resource-data-from-jcr-repo
+
+
+http://localhost:8080/.explorer.html#
+
+
+Open the ticket
+
+Target
+C:\Windows\System32\cmd.exe /K "C:\Program Files (Portable)\CustomCMD\javaVersion.cmd"
+
+Start in
+D:\Projects\HoldenSlingPOC
+
+
+java -jar org.apache.sling.launchpad-6-standalone.jar
+
+
+Click below in the URL
+http://localhost:8080/system/console/bundles
+
+
+Create some content
+curl -u admin:admin -F"sling:resourceType=foo/bar" -F"title=some title" http://localhost:8080/content/mynode
+
+
+The resulting node can be seen at 
+
+http://localhost:8080/content/mynode.html
+http://localhost:8080/content/mynode.json
+http://localhost:8080/content/mynode.xml
+
+
+http://localhost:8080/content/mynode2.asdf
+
+http://localhost:8080/content/test.html
+
+
+http://localhost:8080/content/mynode.asdf
+
+
+Admin
+http://localhost:8080/.explorer.html#
+http://localhost:8080/system/console/bundles
+
+
+
+
+Read
+http://sling.apache.org/documentation/tutorials-how-tos.html
+http://sling.apache.org/site/repository-based-development.html
+
+
+
+curl http://localhost:8080/content/mynode.json {"title":"some title","sling:resourceType":"foo/bar","jcr:primaryType":"nt:unstructured"}
+
+
+
+
+mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.isobar.app -DartifactId=jcrPOC
+
+
+http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html
+
+
+http://stackoverflow.com/questions/16932789/accessing-resource-data-from-jcr-repo
+
+
+/resources/js/ipLocation/ipPostcode.js
+
+
+
+
+mvn clean install -Dmaven.test.skip=true
+
+
+JcrResourceUtil to wring nodes
+http://sling.apache.org/apidocs/sling6/org/apache/sling/jcr/resource/JcrResourceUtil.html
+
+READ
+http://sling.apache.org/documentation/tutorials-how-tos/getting-resources-and-properties-in-sling.html
+https://sling.apache.org/documentation/the-sling-engine/resources.html
+http://sling.apache.org/apidocs/sling6/org/apache/sling/api/resource/ResourceResolverFactory.html#getResourceResolver%28java.util.Map%29
+http://www.day.com/maven/jdiff-jcr1-jcr2/changes/javax.jcr.Node.html
+http://www.day.com/maven/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html
+http://sling.apache.org/apidocs/sling6/index.html

@@ -21,5 +21,15 @@ public class Offer {
 	}
 
 
-	
+    public static void main(String []args){
+        int product = 1;
+        for (int i = 10; i < 99; i++) {
+            product *= i;
+        }
+        System.out.println(product);
+        
+        Integer a = null;
+        Integer b = null;
+        System.out.println(a>b);
+    }
 }
